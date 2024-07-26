@@ -18,10 +18,10 @@ terraform {
 
   }
   backend "remote" {
-    organization = "ned-in-the-cloud"
+    organization = "run_the_best"
 
     workspaces {
-      name = "terraform-tuesday-ado-setup"
+      name = "run_with_fun"
     }
   }
 }
