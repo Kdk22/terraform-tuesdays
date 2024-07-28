@@ -42,6 +42,8 @@ data "azurerm_storage_account_sas" "state" {
   start  = timestamp()
   expiry = timeadd(timestamp(), "17520h")
 
+
+
   permissions {
     read    = true
     write   = true
@@ -51,5 +53,7 @@ data "azurerm_storage_account_sas" "state" {
     create  = true
     update  = false
     process = false
+     tag     = false
+    filter  = false
   }
 }
